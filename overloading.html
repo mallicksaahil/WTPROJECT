@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WT Project</title>
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Shadows+Into+Light&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- css stylesheets-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7e578a2061.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand mb-0 h4 " href="#"><i class="fa-solid fa-blog fonticons"></i> Web Techno</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+              <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contents
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="class.html">Classes and Class Members</a></li>
+                <li><a class="dropdown-item" href="keyword.html">Keywords</a></li>
+                <li><a class="dropdown-item" href="object.html">Objects</a></li>
+                <li><a class="dropdown-item" href="constructors.html">Constructors</a></li>
+                <li><a class="dropdown-item" href="overloading.html">Overloading</a></li>
+              </ul>
+            </ul>
+            <em>HTML CSS Java</em> <i class="fa-2x fa-brands fa-spotify fonticon"></i> <i
+              class="fa fa-2x fa-thin fa-magnifying-glass fonticon"></i> <i
+              class="fa-2x fa-brands fa-wikipedia-w fonticon"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </section>
+  <h1 class="col-lg heading">Overloading</h1>
+  <section id="table">
+
+    <h2>Constructor Overloading</h2>
+    <p>In Java, we can overload constructors like methods. The constructor overloading can be
+      defined as the concept of having more than one constructor with different parameters so that every constructor can
+      perform a different task.</p>
+    <img class="testimonial-this"
+      src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/03/constructor-overloading-in-java.jpg">
+
+    <p>
+      So we can say that is is the use of more than one constructor in an instance class. However, each
+      overloaded constructor must have different signatures.
+    </p>
+    <ul>
+      <li> For the compilation to be successful, each constructor must contain a different list of arguments.</li>
+      <li>The list of parameters includes sequence and the types of input arguments.</li>
+      <li>Two constructors in a class with the same list of parameters is not feasible in Java.</li>
+    </ul>
+
+    <section id="examples">
+      <h5>Example-</h5>
+      <p>Here's a program showcasing different constructors </p>
+      <div class="codes">
+        public class Student {<br>
+        <br>
+        int roll;<br>
+        String name;<br>
+        <br>
+        Student() {<br>
+        System.out.println("Default constructor");<br>
+        }<br>
+        <br>
+        Student(int r, String n) {<br>
+        roll = r;<br>
+        name = n;<br>
+        }<br>
+        <br>
+        public static void main(String[] args) {<br>
+        Student s = new Student();<br>
+        System.out.println("\nDefault Constructor values- \n");<br>
+        System.out.println("Roll- " + s.roll + "\n Name- " + s.name);<br>
+        <br>
+        System.out.println("\nParameterized Constructor values- \n");<br>
+        Student student = new Student(10, "Ajay");<br>
+        System.out.println("Roll- " + student.roll + "\nName- " + student.name);<br>
+        }
+        }
+        <br><br>
+        <b>OUTPUT:</b><br>
+        Default constructor<br>
+        <br>
+        Default Constructor values-<br>
+        <br>
+        Roll- 0<br>
+        Name- null<br>
+        <br>
+        Parameterized Constructor values-<br>
+        <br>
+        Roll- 10<br>
+        Name- Ajay<br>
+      </div>
+    </section>
+
+    <br><br>
+
+
+    <h3>Benefits of Constructor Overloading in Java</h3>
+    <p> The key advantages of making use of constructor overloading while writing Java programs are:
+    </p>
+
+    <ul>
+      <li>The constructor overloading enables the accomplishment of static polymorphism.</li>
+      <li>The class instances can be initialized in several ways with the use of constructor overloading.</li>
+      <li>It facilitates the process of defining multiple constructors in a class with unique signatures.</li>
+      <li>Each overloaded constructor performs various tasks for specified purposes.</li>
+    </ul>
+  </section>
+
+  <section id="whatis">
+    <h2>Method Overloading</h2>
+    <p>If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+    </p>
+    <img class="testimonial-this"
+      src="https://4.bp.blogspot.com/-T_rzdCAe3p4/W8ni6-U1_1I/AAAAAAAAA2I/F5zh_qSmSgotYJoH2oH-lxeHAPW42J89QCLcBGAs/s640/Method%2BOverloading.png">
+
+    <p>
+      If we have to perform only one operation, having same name of the methods increases the readability of the
+      program.<br>
+      It may be difficult to understand the behavior of the method if its name differs.<br>
+      So, we perform method overloading to figure out the program quickly.
+    </p>
+    <br>
+    <h3>Benefits of Method Overloading in Java</h3>
+    <ul>
+      <li> Method overloading increases the readability of the program.</li>
+    </ul>
+    <br><br>
+    <h3>Different ways to overload the method</h3><br>
+    <ol>
+      <li>By changing number of arguments</li>
+    </ol>
+
+    <section id="examples">
+      <h5>Example-</h5>
+      <p>In this example, we have created two methods, first add() method performs addition of two numbers and second
+        add method performs addition of three numbers. </p>
+      <div class="codes">
+        class Adder{<br>
+        static int add(int a,int b){return a+b;}<br>
+        static int add(int a,int b,int c){return a+b+c;}<br>
+        }<br><br>
+        class TestOverloading1{<br>
+        public static void main(String[] args){<br>
+        System.out.println(Adder.add(11,11));<br>
+        System.out.println(Adder.add(11,11,11));<br>
+        }}
+        <br><br>
+        <b>OUTPUT:</b><br>
+        22<br>
+        33
+      </div>
+    </section>
+
+    <br><br>
+    <ol start="2">
+      <li>By changing the data type</li>
+    </ol>
+
+    <section id="examples">
+      <h5>Example-</h5>
+      <p>In this example, we have created two methods that differs in data type. The first add method receives two
+        integer arguments and second add method receives two double arguments.</p>
+      <div class="codes">
+        class Adder{<br>
+        static int add(int a, int b){return a+b;} <br>
+        static double add(double a, double b){return a+b;} <br>
+        } <br><br>
+        class TestOverloading2{ <br>
+        public static void main(String[] args){ <br>
+        System.out.println(Adder.add(11,11)); <br>
+        System.out.println(Adder.add(12.3,12.6)); <br>
+        }}
+        <br><br>
+        <b>OUTPUT:</b><br>
+        22<br>
+        24.9
+      </div>
+    </section>
+
+  </section>
+
+
+  <section id="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/"> <i class="fa-2x fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/"> <i class="fa-2x fa-brands fa-twitter"></i> Twitter</a>
+    <a class="footer-link" href="https://www.geeksforgeeks.org/"> <i class="fa-2x fa-solid fa-computer"></i> Courses</a>
+    <p class="name">© CSE 08 GROUP 5.</p>
+  </section>
+
+
+</body>
+
+</html>

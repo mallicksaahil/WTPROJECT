@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WT Project</title>
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- css stylesheets-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7e578a2061.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand mb-0 h4 " href="#"><i class="fa-solid fa-blog fonticons"></i> Web Techno</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+              <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contents
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="class.html">Classes and Class Membersder</a></li>
+                <li><a class="dropdown-item" href="keyword.html">Keywords</a></li>
+                <li><a class="dropdown-item" href="object.html">Objects</a></li>
+                <li><a class="dropdown-item" href="constructors.html">Constructors</a></li>
+                <li><a class="dropdown-item" href="overloading.html">Overloading</a></li>
+              </ul>
+            </ul>
+            <em>HTML CSS Java</em> <i class="fa-2x fa-brands fa-spotify fonticon"></i> <i
+              class="fa fa-2x fa-thin fa-magnifying-glass fonticon"></i> <i
+              class="fa-2x fa-brands fa-wikipedia-w fonticon"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <h1 class="col-lg heading">Objects</h1>
+  <section id="table">
+    <h2>What Does Java Object Mean?</h2>
+    <p>A Java object is a member (also called an instance) of a Java class. Each object has an identity, a behavior and
+      a state.
+      <img class="testimonial-this" src="ob.png">
+
+      The state of an object is stored in fields (variables), while methods (functions) display the object's
+      behavior.<br>
+      Objects are created at runtime from templates, which are also known as classes.<br><br>
+
+      In Java, an object is created using the keyword "new".<br><br>
+
+      Java objects are very similar to the objects we can observe in the real world. A cat, a lighter, a pen, or a car
+      are all objects.<br>
+
+      They are characterized by three features:
+    </p>
+    <img class="testimonial-this" src="https://codingnomads.co/wp-content/uploads/2020/12/unnamed-1.png">
+    <br>
+    <ul>
+      <li><b>Identity</b></li>
+    </ul>
+
+    <p>The identity is a characteristic used to uniquely identify that object- such as a random ID number or an address
+      in memory. Simpler objects like a lighter may have only two states (on and off) and behaviors (turn on, turn off),
+      but they still have an identity (that item's manufacturing ID, for example).
+    </p>
+
+    <ul>
+      <li><b>State</b></li>
+    </ul>
+
+    <p>
+      A Java object's states are stored in fields that represent the individual characteristics of that object. For
+      example, in a first-person shooter video game, a pistol with an eight-bullets clip has nine states in total: one
+      for each bullet (e.g. 8 bullets, 7 bullets, 5 bullets, etc.), plus another one when it's empty (0 bullets).
+    </p>
+
+    <ul>
+      <li><b>Behavior</b></li>
+    </ul>
+
+    <p>
+      The object's behavior is exposed through methods that operate its internal state. For example, the “shooting”
+      behavior will change the state of the pistol from “8 bullets'' to “7 bullets” and so forth every time the player
+      shoots with the gun.<br><br>
+      The “reloading” behavior will bring back the pistol into the original “8 bullets" state.<br>
+
+      There are three steps to creating a Java object:
+    </p>
+
+    <ul>
+      <li>Declaration of the object.</li>
+      <li>Instantiation of the object.</li>
+      <li> Initialization of the object.</li>
+    </ul>
+
+    <p>
+      When a Java object is declared, a name is associated with that object. The object is instantiated so that memory
+      space can be allocated. Initialization is the process of assigning initial values to the object attribute. Object
+      properties are consistent through all objects from the same class, unlike class properties which are applied only
+      to that specific class.
+    </p>
+  </section>
+
+
+  <section id="explain">
+    <h3>The properties of Java objects include:</h3>
+    <ul>
+      <li><b> One can usually interact with the object through its methods.</b></li><br>
+      <p> Hence, internal details are hidden.<br>
+        In theory, however,although unusual and often not recommended,<br>
+        one can define public attributes which can be accessed directly.<br>
+        Through states and methods, the objects stay in control of how the world can use it.
+      </p>
+
+      <li>
+        <b>Code can be bundled into individual objects, and thanks to modularity, the source code of every one of them
+          can
+          be written and maintained independently of the others.</b>
+      </li>
+      <br>
+      <li>
+        <b>When a program's operation is hindered by a particular object, that object can be easily removed and
+          replaced.
+          Just like in the real world, you can simply substitute a part of a machine that doesn't work like a piston or
+          a
+          gear.</b>
+      </li>
+
+
+    </ul>
+  </section>
+  </section>
+
+  <section id="whatis">
+    <h4>SNIPPETS</h4>
+    <img class="testimonial-this" src="https://i.ytimg.com/vi/Z-Y-7jND_Dc/maxresdefault.jpg">
+
+    <h4>An example showcasing object creation</h4>
+    <img class="testimonial-this" src="https://linuxhint.com/wp-content/uploads/2022/03/word-image-3.png">
+  </section>
+
+  <section id="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/"> <i class="fa-2x fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/"> <i class="fa-2x fa-brands fa-twitter"></i> Twitter</a>
+    <a class="footer-link" href="https://www.geeksforgeeks.org/"> <i class="fa-2x fa-solid fa-computer"></i> Courses</a>
+    <p class="name">© CSE 08 GROUP 5.</p>
+  </section>
+</body>
+
+</html>

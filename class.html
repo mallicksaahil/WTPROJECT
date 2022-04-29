@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>WT Project</title>
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Shadows+Into+Light&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- css stylesheets-->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/7e578a2061.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand mb-0 h4 " href="#"><i class="fa-solid fa-blog fonticons"></i> Web Techno</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+              <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contents
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="class.html">Classes and Class Members</a></li>
+                <li><a class="dropdown-item" href="keyword.html">Keywords</a></li>
+                <li><a class="dropdown-item" href="object.html">Objects</a></li>
+                <li><a class="dropdown-item" href="constructors.html">Constructors</a></li>
+                <li><a class="dropdown-item" href="overloading.html">Overloading</a></li>
+              </ul>
+            </ul>
+            <em>HTML CSS Java</em> <i class="fa-2x fa-brands fa-spotify fonticon"></i> <i class="fa fa-2x fa-thin fa-magnifying-glass fonticon"></i> <i class="fa-2x fa-brands fa-wikipedia-w fonticon"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <h1 class="col-lg heading">Class and Class Members</h1>
+  <section id="explain">
+    <br><br>
+    <p class="classtext">A class is a user defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these
+      components, in order:
+    </p>
+    <img class="testimonial-class" src="https://static.javatpoint.com/images/class-in-java.png" alt="class">
+
+    <p>
+    <ul>
+      <li>Modifiers: A class can be public or has default access (Refer this for details).</li>
+      <li>Class Keyword: class keyword is used to create a class.</li>
+      <li>Class name: The name should begin with an initial letter (capitalized by convention).</li>
+      <li>Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.</li>
+      <li>Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.</li>
+      <li>Body: The class body surrounded by braces, { }.</li>
+      <li>Constructors are used for initializing new objects. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
+        There are various types of classes that are used in real time applications such as nested classes, anonymous classes, lambda expressions. </li>
+    </ul>
+    </p>
+
+  </section>
+
+
+  <section id="things">
+    <h4>Things to Know</h4>
+    <p>
+      In the real world, you'll often find many individual objects all of the same kind. There may be thousands of other bicycles in existence, all of the same make and model. Each bicycle was built from the same set of blueprints and therefore
+      contains the same components. In object-oriented terms, we say that your bicycle is an instance of the class of objects known as bicycles. A class is the blueprint from which individual objects are created.
+    </p>
+    <p>
+
+      <img class="testimonial-things" src="https://static.javatpoint.com/core/images/types-of-classes-in-java.png" alt="">
+    <h6>Example</h6><br>
+
+    The following Bicycle class is one possible implementation of a bicycle: <br><br><br>
+
+
+    class Bicycle { <br><br>
+
+    int cadence = 0;<br>
+    int speed = 0;<br>
+    int gear = 1;<br><br>
+
+    void changeCadence(int newValue) {<br>
+    cadence = newValue;<br>
+    }<br><br>
+
+    void changeGear(int newValue) {<br>
+    gear = newValue;<br>
+    }<br><br>
+
+    void speedUp(int increment) {<br>
+    speed = speed + increment;<br>
+    }<br><br>
+
+    void applyBrakes(int decrement) {<br>
+    speed = speed - decrement;<br>
+    }<br><br>
+
+    void printStates() {<br>
+    System.out.println("cadence:" +<br>
+    cadence + " speed:" +<br>
+    speed + " gear:" + gear);<br>
+    }<br>
+    }<br>
+    The syntax of the Java programming language will look new to you, but the design of this class is based on the previous discussion of bicycle objects. The fields cadence, speed, and gear represent the object's state, and the methods
+    (changeCadence, changeGear, speedUp etc.) define its interaction with the outside world.<br><br>
+
+    You may have noticed that the Bicycle class does not contain a main method. That's because it's not a complete application; it's just the blueprint for bicycles that might be used in an application. The responsibility of creating and using new
+    Bicycle objects belongs to some other class in your application.<br><br>
+
+    Here's a BicycleDemo class that creates two separate Bicycle objects and invokes their methods:<br><br>
+
+
+    class BicycleDemo {<br>
+    public static void main(String[] args) {<br><br>
+
+    // Create two different<br>
+    // Bicycle objects<br>
+    Bicycle bike1 = new Bicycle();<br>
+    Bicycle bike2 = new Bicycle();<br><br>
+
+    // Invoke methods on<br>
+    // those objects<br>
+    bike1.changeCadence(50);<br>
+    bike1.speedUp(10);<br>
+    bike1.changeGear(2);<br>
+    bike1.printStates();<br><br>
+
+    bike2.changeCadence(50);<br>
+    bike2.speedUp(10);<br>
+    bike2.changeGear(2);<br>
+    bike2.changeCadence(40);<br>
+    bike2.speedUp(10);<br>
+    bike2.changeGear(3);<br>
+    bike2.printStates();<br>
+    }<br>
+    }<br>
+
+    The output of this test prints the ending pedal cadence, speed, and gear for the two bicycles:<br><br>
+
+    cadence:50 speed:10 gear:2<br>
+    cadence:40 speed:20 gear:3<br>
+    <img class="testimonial-things" src="https://www.w3resource.com/w3r_images/java-class-image.png" alt="">
+    <img class="testimonial-things" src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/Abstract-Class-in-Java.png" alt="">
+
+  </section>
+
+  <section id="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/"> <i class="fa-2x fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/"> <i class="fa-2x fa-brands fa-twitter"></i> Twitter</a>
+    <a class="footer-link" href="https://www.geeksforgeeks.org/"> <i class="fa-2x fa-solid fa-computer"></i> Courses</a>
+    <p class="name">© CSE 08 GROUP 5.</p>
+  </section>
+</body>
+
+</html>
